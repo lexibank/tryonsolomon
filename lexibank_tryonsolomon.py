@@ -4,6 +4,8 @@ import re
 import sqlite3
 
 from clldutils.path import Path
+from clldutils.misc import slug
+
 from pylexibank.dataset import Metadata
 from pylexibank.dataset import Dataset as BaseDataset
 
@@ -52,16 +54,19 @@ class Dataset(BaseDataset):
                     lname = IS_DIGIT.sub("(%s)" % languages[lang]['DIALECT'], lang)
 
                 ds.add_language(
-                    ID=lang,
-                    name=lname,
-                    iso=languages[lang]['ISO'],
-                    glottocode=languages[lang]['GLOTTOCODE'])
-                ds.add_concept(ID=param, gloss=param, conceptset=concept_map[param])
+                    ID=slug(lang),
+                    Name=lname,
+                    ISO639P3code=languages[lang]['ISO'],
+                    Glottocode=languages[lang]['GLOTTOCODE'])
+                ds.add_concept(
+                    ID=slug(param),
+                    Name=param,
+                    Concepticon_ID=concept_map[param])
 
                 if value:
                     ds.add_lexemes(
-                        Language_ID=lang,
-                        Parameter_ID=param,
+                        Language_ID=slug(lang),
+                        Parameter_ID=slug(param),
                         Value=value,
                         Source=[source.id])
         conn.close()
