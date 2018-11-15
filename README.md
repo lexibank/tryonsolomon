@@ -6,6 +6,8 @@ Cite the source dataset as
 
 This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
 
+Conceptlist in Concepticon: [Tryon-1983-324](http://concepticon.clld.org/contributions/Tryon-1983-324)
+
 ## Statistics
 
 
@@ -16,10 +18,10 @@ This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/
 
 - **Varieties:** 111
 - **Concepts:** 323
-- **Lexemes:** 36,709
+- **Lexemes:** 36,711
 - **Synonymy:** 1.07
 - **Cognacy:** 0 cognates in 0 cognate sets
-- **Invalid lexemes:** 36,709
+- **Invalid lexemes:** 0
 - **Tokens:** 0
-- **Segments:** 0 (0 LingPy errors, 0 CLPA errors, 0 CLPA modified)
+- **Segments:** 0 (0 BIPA errors, 0 CTLS sound class errors, 0 CLTS modified)
 - **Inventory size (avg):** 0.00
