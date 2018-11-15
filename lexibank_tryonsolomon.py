@@ -3,11 +3,12 @@ from __future__ import unicode_literals, print_function
 import re
 import sqlite3
 
+import attr
 from clldutils.path import Path
 from clldutils.misc import slug
 
 from pylexibank.dataset import Metadata
-from pylexibank.dataset import Dataset as BaseDataset
+from pylexibank.dataset import Dataset as BaseDataset, Language as BaseLanguage
 
 IS_DIGIT = re.compile(r"""\([12]\)""")
 QUERY = """
@@ -28,18 +29,21 @@ SELECT language, gloss, lexeme FROM lexemes ORDER BY language, gloss, lexeme
 # );
 
 
+@attr.s
+class Language(BaseLanguage):
+    Dialect = attr.ib(default=None)
+
+
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
+    id = 'tryonsolomon'
+    language_class = Language
 
     def cmd_download(self, **kw):
         pass
 
     def cmd_install(self, **kw):
-        concept_map = {
-            c.english: c.concepticon_id for c in self.conceptlist.concepts.values()}
-
         source = self.raw.read_bib()[0]
-        languages = {l['NAME']: l for l in self.languages}
 
         conn = sqlite3.connect(self.raw.posix('tryon.db'))
         cursor = conn.cursor()
@@ -47,22 +51,9 @@ class Dataset(BaseDataset):
 
         with self.cldf as ds:
             ds.add_sources(source)
+            ds.add_concepts(id_factory=lambda c: slug(c.label))
+            ds.add_languages(id_factory=lambda l: slug(l['Name']))
             for i, (lang, param, value) in enumerate(cursor.fetchall(), 1):
-                # rename languages with (1) and (2) to better dialect names
-                lname = lang
-                if languages[lang]['DIALECT']:
-                    lname = IS_DIGIT.sub("(%s)" % languages[lang]['DIALECT'], lang)
-
-                ds.add_language(
-                    ID=slug(lang),
-                    Name=lname,
-                    ISO639P3code=languages[lang]['ISO'],
-                    Glottocode=languages[lang]['GLOTTOCODE'])
-                ds.add_concept(
-                    ID=slug(param),
-                    Name=param,
-                    Concepticon_ID=concept_map[param])
-
                 if value:
                     ds.add_lexemes(
                         Language_ID=slug(lang),
