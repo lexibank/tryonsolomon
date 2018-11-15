@@ -30,6 +30,7 @@ SELECT language, gloss, lexeme FROM lexemes ORDER BY language, gloss, lexeme
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
+    id = 'tryonsolomon'
 
     def cmd_download(self, **kw):
         pass
