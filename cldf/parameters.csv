@@ -92,7 +92,7 @@ pandanus,pandanus,469,PANDANUS
 sagopalm,sago palm,2372,SAGO PALM
 sugarcane,sugarcane,146,SUGAR CANE
 taro,taro,351,TARO
-turmeric,turmeric,,
+turmeric,turmeric,2842,TURMERIC
 yam,yam,410,YAM
 alstoniasp,alstonia sp.,,
 vitexcofassus,vitex cofassus,,
@@ -126,7 +126,7 @@ cave,cave,1155,CAVE
 earth,earth,1228,EARTH (SOIL)
 earthquake,earthquake,6,EARTHQUAKE
 garden,garden,586,GARDEN
-headland,headland,,
+headland,headland,1662,CAPE
 island,island,622,ISLAND
 mountain,mountain,639,MOUNTAIN
 reef,reef,660,REEF
@@ -205,8 +205,8 @@ fear,fear,1419,FEAR (BE AFRAID)
 life,life,210,LIFE
 love,love,923,LOVE
 mistake,mistake,1293,MISTAKE
-spiritdead,spirit (dead),53,SPIRIT
-spiritlive,spirit (live),53,SPIRIT
+spiritdead,spirit (dead),1175,GHOST
+spiritlive,spirit (live),811,SOUL
 black,black,163,BLACK
 blue,blue,837,BLUE
 green,green,1425,GREEN
@@ -255,11 +255,11 @@ tired,tired,1757,TIRED
 wild,wild,1208,CAT
 break,break,680,BREAK (DESTROY OR GET DESTROYED)
 cutstring,cut (string),2155,CUT (WITH SCISSORS)
-cutwood,cut (wood),2156,CUT (WITH KNIFE)
+cutwood,cut (wood),3151,CUT (WITH AXE)
 dig,dig,1418,DIG
 fight,fight,1423,FIGHT
 give,give,1447,GIVE
-hit,hit,1433,HIT
+hit,hit,353,STRIKE
 hold,hold,1448,HOLD
 hunt,hunt,1435,HUNT
 kill,kill,1417,KILL
