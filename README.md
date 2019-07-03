@@ -11,6 +11,7 @@ Conceptlists in Concepticon:
 
 ## Statistics
 
+
 [![Build Status](https://travis-ci.org/lexibank/tryonsolomon.svg?branch=master)](https://travis-ci.org/lexibank/tryonsolomon)
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
 ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%")
@@ -20,4 +21,3 @@ Conceptlists in Concepticon:
 - **Concepts:** 323
 - **Lexemes:** 36,711
 - **Synonymy:** 1.07
-

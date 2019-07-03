@@ -1,13 +1,9 @@
-# coding=utf-8
-from __future__ import unicode_literals, print_function
 import re
 import sqlite3
 
 import attr
-from clldutils.path import Path
 from clldutils.misc import slug
-
-from pylexibank.dataset import Metadata
+from clldutils.path import Path
 from pylexibank.dataset import Dataset as BaseDataset, Language as BaseLanguage
 
 IS_DIGIT = re.compile(r"""\([12]\)""")
@@ -18,7 +14,7 @@ SELECT language, gloss, lexeme FROM lexemes ORDER BY language, gloss, lexeme
 # the sequence position as an id
 
 # DATABASE SCHEMA:
-# 
+#
 # CREATE TABLE lexemes (
 #   language TEXT,   -- Language name
 #   gloss TEXT,      -- English gloss
@@ -36,7 +32,7 @@ class Language(BaseLanguage):
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
-    id = 'tryonsolomon'
+    id = "tryonsolomon"
     language_class = Language
 
     def cmd_download(self, **kw):
@@ -45,19 +41,20 @@ class Dataset(BaseDataset):
     def cmd_install(self, **kw):
         source = self.raw.read_bib()[0]
 
-        conn = sqlite3.connect(self.raw.posix('tryon.db'))
+        conn = sqlite3.connect(self.raw.posix("tryon.db"))
         cursor = conn.cursor()
         cursor.execute(QUERY)
 
         with self.cldf as ds:
             ds.add_sources(source)
             ds.add_concepts(id_factory=lambda c: slug(c.label))
-            ds.add_languages(id_factory=lambda l: slug(l['Name']))
+            ds.add_languages(id_factory=lambda l: slug(l["Name"]))
             for i, (lang, param, value) in enumerate(cursor.fetchall(), 1):
                 if value:
                     ds.add_lexemes(
                         Language_ID=slug(lang),
                         Parameter_ID=slug(param),
                         Value=value,
-                        Source=[source.id])
+                        Source=[source.id],
+                    )
         conn.close()
