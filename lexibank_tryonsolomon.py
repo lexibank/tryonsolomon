@@ -54,7 +54,7 @@ class Dataset(BaseDataset):
                     ds.add_lexemes(
                         Language_ID=slug(lang),
                         Parameter_ID=slug(param),
-                        Value=value,
+                        Value=self.lexemes.get(value, value),
                         Source=[source.id],
                     )
         conn.close()
