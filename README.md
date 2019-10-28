@@ -6,9 +6,9 @@ Cite the source dataset as
 
 This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
 
-Conceptlists in Concepticon:
-- [Tryon-1983-324](http://concepticon.clld.org/contributions/Tryon-1983-324)
 
+Conceptlists in Concepticon:
+- [Tryon-1983-324](https://concepticon.clld.org/contributions/Tryon-1983-324)
 ## Statistics
 
 
@@ -25,6 +25,6 @@ Conceptlists in Concepticon:
 - **Sources:** 1
 - **Synonymy:** 1.07
 - **Invalid lexemes:** 0
-- **Tokens:** 198,843
+- **Tokens:** 198,838
 - **Segments:** 72 (0 BIPA errors, 0 CTLS sound class errors, 72 CLTS modified)
 - **Inventory size (avg):** 27.48
