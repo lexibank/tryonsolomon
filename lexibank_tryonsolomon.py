@@ -19,7 +19,8 @@ from pylexibank import FormSpec
 #   page INTEGER     -- Page number in Tryon and Hackman
 # );
 QUERY = """
-SELECT language, gloss, lexeme FROM lexemes ORDER BY language, gloss, lexeme
+SELECT language, gloss, lexeme FROM lexemes
+ORDER BY language, gloss, lexeme
 """
 # order by in the above query is just to get ordering consistent
 
@@ -45,22 +46,23 @@ class Dataset(BaseDataset):
         pass
 
     def cmd_makecldf(self, args):
-        source = self.raw_dir.read_bib()[0]
-
         conn = sqlite3.connect(self.raw_dir / "tryon.db")
         cursor = conn.cursor()
         cursor.execute(QUERY)
-
-        args.writer.add_sources(source)
-        args.writer.add_concepts(id_factory=lambda c: slug(c.label))
-        args.writer.add_languages(id_factory=lambda l: slug(l["Name"]))
+        
+        args.writer.add_sources()
+        languages = args.writer.add_languages(lookup_factory="Name")
+        concepts = args.writer.add_concepts(
+            id_factory=lambda c: c.id.split('-')[-1]+ '_' + slug(c.english),
+            lookup_factory="Name"
+        )
         
         for lang, param, value in cursor.fetchall():
             if value:
                 args.writer.add_forms_from_value(
-                    Language_ID=slug(lang),
-                    Parameter_ID=slug(param),
-                    Value=self.lexemes.get(value, value),
-                    Source=[source.id],
+                    Language_ID=languages[lang],
+                    Parameter_ID=concepts[param],
+                    Value=self.lexemes.get(value, value).strip(),
+                    Source=['Tryon1983'],
                 )
         conn.close()
