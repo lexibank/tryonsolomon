@@ -1,8 +1,8 @@
 import sqlite3
+from pathlib import Path
 
 import attr
 from clldutils.misc import slug
-from clldutils.path import Path
 from pylexibank import Dataset as BaseDataset
 from pylexibank import Language as BaseLanguage
 from pylexibank import FormSpec
