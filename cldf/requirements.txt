@@ -13,7 +13,7 @@ isodate==0.6.0
 jdcal==1.4.1
 -e git+https://github.com/lexibank/bantubvd@c0dfcf3264a4d58d08c0885310730ec39bffa703#egg=lexibank_bantubvd
 -e git+https://github.com/lexibank/transnewguineaorg@c6d687f654952005e8ec78b589dc92db9babe6a5#egg=lexibank_transnewguineaorg
--e git+https://github.com/lexibank/tryonsolomon@381582caf8dc18935be1a64d88c54e73e692a4a2#egg=lexibank_tryonsolomon
+-e git+https://github.com/lexibank/tryonsolomon@700b2616a4cb1b202d28c24105620fc22c7f966d#egg=lexibank_tryonsolomon
 lingpy==2.6.5
 Markdown==3.1.1
 networkx==2.1
