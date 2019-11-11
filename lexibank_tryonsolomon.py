@@ -53,7 +53,7 @@ class Dataset(BaseDataset):
         args.writer.add_sources()
         languages = args.writer.add_languages(lookup_factory="Name")
         concepts = args.writer.add_concepts(
-            id_factory=lambda c: c.id.split('-')[-1]+ '_' + slug(c.english),
+            id_factory=lambda c: c.id.split('-')[-1] + '_' + slug(c.english),
             lookup_factory="Name"
         )
         
