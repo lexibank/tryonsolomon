@@ -248,17 +248,17 @@ ID,Name,Concepticon_ID,Concepticon_Gloss
 248_rotten,rotten,1728,ROTTEN
 249_sick,sick,1847,SICK
 250_smooth,smooth,1234,SMOOTH
-251_soreadj,sore (adj.),51,SORE
+251_soreadj,sore (adj.),,
 252_straight,straight,1404,STRAIGHT
 253_tired,tired,1757,TIRED
-254_wild,wild,1208,CAT
+254_wild,wild,2230,UNTAMED OR WILD
 255_break,break,680,BREAK (DESTROY OR GET DESTROYED)
 256_cutstring,cut (string),2155,CUT (WITH SCISSORS)
 257_cutwood,cut (wood),3151,CUT (WITH AXE)
 258_dig,dig,1418,DIG
 259_fight,fight,1423,FIGHT
 260_give,give,1447,GIVE
-261_hit,hit,353,STRIKE
+261_hit,hit,1433,HIT
 262_hold,hold,1448,HOLD
 263_hunt,hunt,1435,HUNT
 264_kill,kill,1417,KILL
@@ -289,7 +289,7 @@ ID,Name,Concepticon_ID,Concepticon_Gloss
 289_walk,walk,1443,WALK
 290_ask,ask,1309,ASK (INQUIRE)
 291_count,count,1420,COUNT
-292_know,know,1410,KNOW (SOMETHING)
+292_know,know,3626,KNOW
 293_say,say,1458,SAY
 294_sing,sing,1261,SING
 295_think,think,2271,THINK
