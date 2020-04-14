@@ -1,4 +1,4 @@
-# Solomon Islands Languages
+# CLDF dataset derived from Tryon and Hackman's "Solomon Islands Languages" from 1983.
 
 Cite the source dataset as
 
@@ -31,8 +31,8 @@ Conceptlists in Concepticon:
 
 # Contributors
 
-Name | GitHub user | Role
---- | --- | ---
-Simon Greenhill | @SimonGreenhill | maintainer
+Name               | GitHub user     | Description                          | Role
+---                | ---             | ---                                  | ---
+Simon J. Greenhill | @SimonGreenhill | patron                               | Author
 
 
