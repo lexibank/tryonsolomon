@@ -1,4 +1,4 @@
-# CLDF dataset derived from Tryon and Hackman's "Solomon Islands Languages" from 1983.
+# CLDF dataset derived from Tryon and Hackman's "Solomon Islands Languages" from 1983
 
 Cite the source dataset as
 
