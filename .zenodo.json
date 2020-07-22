@@ -1,0 +1,24 @@
+{
+    "title": "CLDF dataset derived from Tryon and Hackman's \"Solomon Islands Languages\" from 1983",
+    "access_right": "open",
+    "keywords": [
+        "cldf:Wordlist",
+        "linguistics"
+    ],
+    "creators": [
+        {
+            "name": "Simon J. Greenhill"
+        }
+    ],
+    "contributors": [],
+    "communities": [
+        {
+            "identifier": "lexibank"
+        }
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tryon, D. T. and Hackman, B. D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-NC-4.0"
+    }
+}
