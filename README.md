@@ -4,7 +4,7 @@ Cite the source dataset as
 
 > Tryon, D. T. and Hackman, B. D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.
 
-This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
+This dataset is licensed under a CC-BY-4.0 license
 
 
 Conceptlists in Concepticon:
