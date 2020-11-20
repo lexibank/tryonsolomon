@@ -17,7 +17,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/lexibank/tryonsolomon",
-            "dc:created": "v2.0.1-19-gef66c9e"
+            "dc:created": "v2.0.1-20-g370a275"
         },
         {
             "rdf:type": "prov:Entity",

@@ -5,12 +5,13 @@
         "cldf:Wordlist",
         "linguistics"
     ],
-    "creators": [
+    "creators": [],
+    "contributors": [
         {
-            "name": "Simon J. Greenhill"
+            "name": "Simon J. Greenhill",
+            "type": "Other"
         }
     ],
-    "contributors": [],
     "communities": [
         {
             "identifier": "lexibank"

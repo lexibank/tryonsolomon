@@ -33,6 +33,6 @@ Conceptlists in Concepticon:
 
 Name               | GitHub user     | Description                          | Role
 ---                | ---             | ---                                  | ---
-Simon J. Greenhill | @SimonGreenhill | patron                               | Author
+Simon J. Greenhill | @SimonGreenhill | patron                               | Other
 
 
