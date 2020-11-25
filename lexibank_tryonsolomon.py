@@ -6,6 +6,7 @@ from clldutils.misc import slug
 from pylexibank import Dataset as BaseDataset
 from pylexibank import Language as BaseLanguage
 from pylexibank import FormSpec
+from pylexibank import progressbar
 
 
 # DATABASE SCHEMA:
@@ -39,6 +40,7 @@ class Dataset(BaseDataset):
         brackets={"(": ")"},
         separators=";/,",
         missing_data=('?', '-', '', ''),
+        replacements=[(" ", "_")],
         strip_inside_brackets=True
     )
     
@@ -57,7 +59,7 @@ class Dataset(BaseDataset):
             lookup_factory="Name"
         )
         
-        for lang, param, value in cursor.fetchall():
+        for lang, param, value in progressbar(cursor.fetchall()):
             if value:
                 args.writer.add_forms_from_value(
                     Language_ID=languages[lang],

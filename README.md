@@ -25,14 +25,16 @@ Conceptlists in Concepticon:
 - **Sources:** 1
 - **Synonymy:** 1.07
 - **Invalid lexemes:** 0
-- **Tokens:** 198,838
-- **Segments:** 72 (0 BIPA errors, 0 CTLS sound class errors, 72 CLTS modified)
-- **Inventory size (avg):** 27.48
+- **Tokens:** 193,192
+- **Segments:** 75 (0 BIPA errors, 0 CTLS sound class errors, 75 CLTS modified)
+- **Inventory size (avg):** 28.23
 
 # Contributors
 
 Name               | GitHub user     | Description                          | Role
 ---                | ---             | ---                                  | ---
 Simon J. Greenhill | @SimonGreenhill | patron                               | Other
+D. T. Tryon  | | data compilation | Author
+B. D. Hackmann | | data compilation | Author 
 
 
