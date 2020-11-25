@@ -46,7 +46,7 @@ class Dataset(BaseDataset):
         pass
 
     def cmd_makecldf(self, args):
-        conn = sqlite3.connect(self.raw_dir / "tryon.db")
+        conn = sqlite3.connect((self.raw_dir / "tryon.db").as_posix())
         cursor = conn.cursor()
         cursor.execute(QUERY)
         

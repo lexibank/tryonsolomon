@@ -1,10 +1,10 @@
-# Solomon Islands Languages
+# CLDF dataset derived from Tryon and Hackman's "Solomon Islands Languages" from 1983
 
 Cite the source dataset as
 
 > Tryon, D. T. and Hackman, B. D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.
 
-This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
+This dataset is licensed under a CC-BY-4.0 license
 
 
 Conceptlists in Concepticon:
@@ -28,3 +28,11 @@ Conceptlists in Concepticon:
 - **Tokens:** 198,838
 - **Segments:** 72 (0 BIPA errors, 0 CTLS sound class errors, 72 CLTS modified)
 - **Inventory size (avg):** 27.48
+
+# Contributors
+
+Name               | GitHub user     | Description                          | Role
+---                | ---             | ---                                  | ---
+Simon J. Greenhill | @SimonGreenhill | patron                               | Other
+
+

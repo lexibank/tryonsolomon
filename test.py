@@ -12,7 +12,3 @@ def test_sources(cldf_dataset):
 
 def test_parameters(cldf_dataset):
     assert len(list(cldf_dataset["ParameterTable"])) == 323
-
-
-def test_cognates(cldf_dataset):
-    assert len({c["Cognateset_ID"] for c in cldf_dataset["CognateTable"]}) == 0
