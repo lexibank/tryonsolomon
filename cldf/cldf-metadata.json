@@ -1,7 +1,7 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
-    "dc:bibliographicCitation": "Tryon, D. T. and Hackman, B. D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.",
+    "dc:bibliographicCitation": "Tryon, Durrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:format": [
         "http://concepticon.clld.org/contributions/Tryon-1983-324"
@@ -16,7 +16,7 @@
         {
             "rdf:about": "https://github.com/lexibank/tryonsolomon",
             "rdf:type": "prov:Entity",
-            "dc:created": "v3.0-13-gb803251",
+            "dc:created": "v3.0-14-g2bfad50",
             "dc:title": "Repository"
         },
         {

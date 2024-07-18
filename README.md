@@ -6,7 +6,7 @@
 
 If you use these data please cite
 - the original source
-  > Tryon, D. T. and Hackman, B. D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.
+  > Tryon, Durrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.
 - the derived dataset using the DOI of the [particular released version](../../releases/) you were using
 
 ## Description
@@ -42,7 +42,7 @@ Conceptlists in Concepticon:
 Name               | GitHub user     | Description                          | Role
 ---                | ---             | ---                                  | ---
 Simon J. Greenhill | @SimonGreenhill | patron                               | Editor
-T. Tryon  | | data compilation | Author
+Darrell T. Tryon  | | data compilation | Author
 B. D. Hackmann | | data compilation | Author
 
 
