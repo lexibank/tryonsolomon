@@ -25,7 +25,7 @@
         }
     ],
     "upload_type": "dataset",
-    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tryon, Durrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.</p>\n</blockquote>",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tryon, Darrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.</p>\n</blockquote>",
     "license": {
         "id": "CC-BY-4.0"
     }

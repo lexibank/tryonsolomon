@@ -6,7 +6,7 @@
 
 If you use these data please cite
 - the original source
-  > Tryon, Durrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.
+  > Tryon, Darrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.
 - the derived dataset using the DOI of the [particular released version](../../releases/) you were using
 
 ## Description
