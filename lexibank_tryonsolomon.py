@@ -35,6 +35,7 @@ class Dataset(BaseDataset):
     dir = Path(__file__).parent
     id = "tryonsolomon"
     language_class = Language
+    writer_options = dict(keep_languages=False, keep_parameters=False)
 
     form_spec = FormSpec(
         brackets={"(": ")"},
@@ -51,14 +52,14 @@ class Dataset(BaseDataset):
         conn = sqlite3.connect((self.raw_dir / "tryon.db").as_posix())
         cursor = conn.cursor()
         cursor.execute(QUERY)
-        
+
         args.writer.add_sources()
         languages = args.writer.add_languages(lookup_factory="Name")
         concepts = args.writer.add_concepts(
             id_factory=lambda c: c.id.split('-')[-1] + '_' + slug(c.english),
             lookup_factory="Name"
         )
-        
+
         for lang, param, value in progressbar(cursor.fetchall()):
             if value:
                 args.writer.add_forms_from_value(

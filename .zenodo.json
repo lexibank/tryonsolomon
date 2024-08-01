@@ -7,7 +7,7 @@
     ],
     "creators": [
         {
-            "name": "D. T. Tryon"
+            "name": "Darrell T. Tryon"
         },
         {
             "name": "B. D. Hackmann"
@@ -16,7 +16,7 @@
     "contributors": [
         {
             "name": "Simon J. Greenhill",
-            "type": "Other"
+            "type": "Editor"
         }
     ],
     "communities": [
@@ -25,7 +25,7 @@
         }
     ],
     "upload_type": "dataset",
-    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tryon, D. T. and Hackman, B. D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.</p>\n</blockquote>",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tryon, Darrell T. and Hackman, Brian D. (1983): Solomon Islands Languages: An internal classification. Canberra: Pacific Linguistics.</p>\n</blockquote>",
     "license": {
         "id": "CC-BY-4.0"
     }
